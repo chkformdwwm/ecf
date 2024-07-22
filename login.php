@@ -29,7 +29,7 @@
 
     <?php
     require_once __DIR__ . "/assets/lib/session.php";
-
+    require_once __DIR__ . "/assets/lib/session.php";
     require_once __DIR__ . "/assets/lib/user.php";
     require_once __DIR__ . "/assets/lib/pdo.php";
 
@@ -37,44 +37,38 @@
     $errors = [];
     if (isset($_POST['loginUser'])) {
         $user = verifyUserLoginPassword($pdo, $_POST['email'], $_POST['password']);
+        //if ($user === false) {
+
+        //  $errors[] = "E-mail ou mot de passe incorrect";
+        //} else
 
         if (($user['staff_id'] === 1)) {
             //session employé
             $_SESSION['user'] = $user;
-            header('location: /backend/accueil_employe.php');
+            header('location: /users/accueil_employe.php');
         } else
 
         if (($user['staff_id'] === 2)) {
             //session vétérinaire
-            $_SESSION['user'] = $user;
-            header('location: /backend/accueil_veterinaire.php');
-        } else
-
-                
-
-        if (isset($_POST['loginUser'])) {
-
-            $admin = verifyAdminLoginPassword($pdo, $_POST['email'], $_POST['password']);
-            if ($admin) {
-                //session direction
-                $_SESSION['admin'] = $admin;
-                header('location: /backend/accueil_admin.php');
-            } else
-
-                //afficher une erreur
-                $errors[] = "E-mail ou mot de passe incorrect";
+            $_SESSION['vet'] = $user;
+            header('location: /users/accueil_veterinaire.php');
         }
     }
+
     ?>
 
 
 
     <div class="container col-xxl-12  col-lg-12 col-md-12 d-flex flex-column my-5 py-5">
 
-        <h1 class="fw-bold mt-5 pt-5 text-center">Se connecter</h1>
+        <h1 class="fw-bold my-5 py-5 text-center">Se connecter</h1>
+
 
         <?php
+
+
         foreach ($errors as $error) { ?>
+
             <div class="container col-xxl-8 alert alert-danger my-2 py-3 px-5" role="alert"><?= $error; ?></div>
 
         <?php

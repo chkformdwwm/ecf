@@ -40,28 +40,18 @@ require_once __DIR__ . "/assets/lib/admin_animals.php";
                                 <h1 class="display-2 fw-bold text-light "><?= $animal['animaux_nom'] ?></h1>
                                 <h4 class="display-5 fw-bold text-light "><?= $animal['animaux_espece'] ?></h4>
                                 <p class="fs-5 fst-italic text-light "><?= $animal['animaux_espece_latin'] ?></p>
-                                <p class="fs-6 fw-lighter text-light d-flex align-self-end">
-                                    <img src="./assets/icons/jungle_24px.png"><span class="ms-2">Jungle</span>
-                                </p>
-
-
 
                                 <div class="border-bottom mb-3"></div>
                                 <p class="fs-6 fw-semibold text-light ">Santé : <span class="fw-light"> <?= $animal['etat_animal'] ?></span></p>
-                                <p class="fs-6 fw-semibold text-light ">Nourriture : <span class="fw-light"><?= $animal['nourriture'] ?></span></p>
-                                <p class="fs-6 fw-semibold text-light ">Ration journalière : <span class="fw-light"><?= $animal['ration'] ?></span></p>
-                                <p class="fs-6 fw-semibold text-light ">Dernier passage vétérinaire : <span class="fw-light"></span></p>
-                                <p class="fs-6 fw-semibold text-light ">Détails : <br><span class="fw-light"><?= $animal['details_etat'] ?></span></p>
-                                <div class="my-5" style="height: 64px;">
-                                    <p class="fs-6 fw-semibold text-light ">Aire de répartition : </p><img class="mh-100 style=width:100px;" src="./assets/icons/mappemonde.png">
-                                </div>
+
+
                             </div>
                         </div>
                         <img src="./assets/img/<?= $animal['animaux_photo_a'] ?>" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h3 class="display-5 fw-bold"><?= $animal['animaux_nom'] ?></h3>
                             <p class="fs-4 fw-bold"><?= $animal['animaux_espece'] ?><span class="fw-light fst-italic"> (<?= $animal['animaux_espece_latin'] ?>)</span></p>
-                            <p class="fs-5"><?= $animal['animaux_description'] ?></p>
+
                         </div>
 
                     </div>
@@ -71,25 +61,18 @@ require_once __DIR__ . "/assets/lib/admin_animals.php";
                                 <h1 class="display-2 fw-bold text-light "><?= $animal['animaux_nom'] ?></h1>
                                 <h4 class="display-5 fw-bold text-light "><?= $animal['animaux_espece'] ?></h4>
                                 <p class="fs-5 fst-italic text-light "><?= $animal['animaux_espece_latin'] ?></p>
-                                <p class="fs-6 fw-lighter text-light d-flex align-self-end">
-                                    <img src="./assets/icons/jungle_24px.png"><span class="ms-2">Jungle</span>
-                                </p>
+
                                 <div class="border-bottom mb-3"></div>
                                 <p class="fs-6 fw-semibold text-light ">Santé : <span class="fw-light"> <?= $animal['etat_animal'] ?></span></p>
-                                <p class="fs-6 fw-semibold text-light ">Nourriture : <span class="fw-light"><?= $animal['nourriture'] ?></span></p>
-                                <p class="fs-6 fw-semibold text-light ">Ration journalière : <span class="fw-light"><?= $animal['ration'] ?></span></p>
-                                <p class="fs-6 fw-semibold text-light ">Dernier passage vétérinaire : <span class="fw-light"></span></p>
-                                <p class="fs-6 fw-semibold text-light ">Détail de l'état de l'animal (facultatif) : <span class="fw-light"><?= $animal['details_etat'] ?></span></p>
-                                <div class="my-5" style="height: 64px;">
-                                    <p class="fs-6 fw-semibold text-light ">Aire de répartition : </p><img class="mh-100 style=width:100px;" src="./assets/icons/mappemonde.png">
-                                </div>
+
+
                             </div>
                         </div>
                         <img src="./assets/img/<?= $animal['animaux_photo_b'] ?>" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h3 class="display-5 fw-bold"><?= $animal['animaux_nom'] ?></h3>
                             <p class="fs-4 fw-bold"><?= $animal['animaux_espece'] ?><span class="fw-light fst-italic"> (<?= $animal['animaux_espece_latin'] ?>)</span></p>
-                            <p class="fs-5"><?= $animal['animaux_description'] ?></p>
+
                         </div>
 
                     </div>
@@ -99,26 +82,17 @@ require_once __DIR__ . "/assets/lib/admin_animals.php";
                                 <h1 class="display-2 fw-bold text-light "><?= $animal['animaux_nom'] ?></h1>
                                 <h4 class="display-5 fw-bold text-light "><?= $animal['animaux_espece'] ?></h4>
                                 <p class="fs-5 fst-italic text-light "><?= $animal['animaux_espece_latin'] ?></p>
-                                <p class="fs-6 fw-lighter text-light d-flex align-self-end">
-                                    <img src="./assets/icons/jungle_24px.png"><span class="ms-2">Jungle</span>
-                                </p>
+
                                 <div class="border-bottom mb-3"></div>
                                 <p class="fs-6 fw-semibold text-light ">Santé : <span class="fw-light"> <?= $animal['etat_animal'] ?></span></p>
-                                <p class="fs-6 fw-semibold text-light ">Nourriture : <span class="fw-light"><?= $animal['nourriture'] ?></span></p>
 
-                                <p class="fs-6 fw-semibold text-light ">Ration journalière : <span class="fw-light"><?= $animal['ration'] ?></span></p>
-                                <p class="fs-6 fw-semibold text-light ">Dernier passage vétérinaire : <span class="fw-light"></span></p>
-                                <p class="fs-6 fw-semibold text-light ">Détail de l'état de l'animal (facultatif) : <span class="fw-light"><?= $animal['details_etat'] ?></span></p>
-                                <div class="my-5" style="height: 64px;">
-                                    <p class="fs-6 fw-semibold text-light ">Aire de répartition : </p><img class="mh-100 style=width:100px;" src="./assets/icons/mappemonde.png">
-                                </div>
                             </div>
                         </div>
                         <img src="./assets/img/<?= $animal['animaux_photo_c'] ?>" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h3 class="display-5 fw-bold"><?= $animal['animaux_nom'] ?></h3>
                             <p class="fs-4 fw-bold"><?= $animal['animaux_espece'] ?><span class="fw-light fst-italic"> (<?= $animal['animaux_espece_latin'] ?>)</span></p>
-                            <p class="fs-5"><?= $animal['animaux_description'] ?></p>
+
                         </div>
 
                     </div>
