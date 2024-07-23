@@ -118,11 +118,9 @@ require_once __DIR__ . "/assets/lib/admin_animals.php";
 <footer>
     <div class="container-fluid custom_footer">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 mt-5">
-            <div class="col mb-3">
+            <div class="col mb-3 d-flex flex-column justify-content-center align-items-start">
                 <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
+                    <img src="./assets/img/logo.png" class="w-100">
                 </a>
                 <p class="footer-element">© 2024 Zoo Arcadia</p>
             </div>
@@ -130,6 +128,7 @@ require_once __DIR__ . "/assets/lib/admin_animals.php";
             <div class="col mb-3">
 
             </div>
+
             <div class="col mb-3 pb-5">
                 <h5 class="footer-element">Habitats</h5>
                 <ul class="nav flex-column">

@@ -91,54 +91,49 @@
 
         <!-------------------------------------------------FOOTER------------------------------------------------->
         <footer>
-            <div class="container">
-                <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-                    <div class="col mb-3">
+            <div class="container-fluid custom_footer">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 mt-5">
+                    <div class="col mb-3 d-flex flex-column justify-content-center align-items-start">
                         <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                            <svg class="bi me-2" width="40" height="32">
-                                <use xlink:href="#bootstrap"></use>
-                            </svg>
+                            <img src="./assets/img/logo.png" class="w-100">
                         </a>
-                        <p class="text-body-secondary">© 2024</p>
+                        <p class="footer-element">© 2024 Zoo Arcadia</p>
                     </div>
 
                     <div class="col mb-3">
 
                     </div>
 
-                    <div class="col mb-3">
-                        <h5>Section</h5>
+                    <div class="col mb-3 pb-5">
+                        <h5 class="footer-element">Habitats</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                            <li class="nav-item mb-2"><a href="habitats.php" class="nav-link p-0 footer-element">Tous les habitats</a></li>
+                            <li class="nav-item mb-2"><a href="savane.php" class="nav-link p-0 footer-element">Savane</a></li>
+                            <li class="nav-item mb-2"><a href="jungle.php" class="nav-link p-0 footer-element">Jungle</a></li>
+                            <li class="nav-item mb-2"><a href="marais.php" class="nav-link p-0 footer-element">Marais</a></li>
+
                         </ul>
                     </div>
 
                     <div class="col mb-3">
-                        <h5>Section</h5>
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                        <h5 class="footer-element">Services</h5>
+                        <ul class=" nav flex-column">
+                            <li class="nav-item mb-2"><a href="services.php" class="nav-link p-0 footer-element">Tous les services</a></li>
+                            <li class="nav-item mb-2"><a href="restauration.php" class="nav-link p-0 footer-element">Restauration</a></li>
+                            <li class="nav-item mb-2"><a href="animations.php#petit_train" class="nav-link p-0 footer-element">Petit train</a></li>
+                            <li class="nav-item mb-2"><a href="animations.php#visite_guidee" class="nav-link p-0 footer-element">Visite guidée</a></li>
+
                         </ul>
                     </div>
 
                     <div class="col mb-3">
-                        <h5>Section</h5>
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                        <h5 class="footer-element">Nous joindre</h5>
+                        <ul class=" nav flex-column">
+                            <li class="nav-item mb-2"><a href="contact.php" class="nav-link p-0 footer-element">Contact</a></li>
+                            <li class="nav-item mb-2"><a href="avis.php" class="nav-link p-0 footer-element">Avis</a></li>
                         </ul>
                     </div>
-                </footer>
+                </div>
             </div>
         </footer>
     </body>

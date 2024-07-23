@@ -94,12 +94,14 @@
                             foreach ($savaneAnimals as $savaneAnimal) { ?>
 
                                 <div class="col">
-                                    <div class="mx-3 card shadow-sm">
+                                    <div class="mx-3 card h-100 shadow-sm">
                                         <div class="">
                                             <img src="./assets/img/<?= $savaneAnimal['photo_a'] ?>" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                                         </div>
                                         <div class="card-body">
                                             <h2><?= $savaneAnimal['nom'] ?></h2>
+                                            <h6 class=" card-subtitle mb-2 text-body-secondary"><?= $savaneAnimal['espece'] ?></h6>
+                                            <div class="border-bottom mb-3"></div>
                                             <p class="card-text"><?= $savaneAnimal['description'] ?></p>
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="">
@@ -108,7 +110,7 @@
                                                     <div class="d-flex mb-3">
                                                         <form action="" method="post">
                                                             <input id="id" name="id" type="hidden" value="<?= $savaneAnimal['id'] ?>" />
-                                                            <input type="submit" value="Voir la fiche" formaction="animal.php" name="displayAnimal" class="btn btn-primary mx-2">
+                                                            <input type="submit" value="Voir la fiche" formaction="animal.php" name="displayAnimal" class="btn btn-warning">
                                                         </form>
 
 
@@ -149,11 +151,9 @@
     <footer>
         <div class="container-fluid custom_footer">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 mt-5">
-                <div class="col mb-3">
+                <div class="col mb-3 d-flex flex-column justify-content-center align-items-start">
                     <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                        <svg class="bi me-2" width="40" height="32">
-                            <use xlink:href="#bootstrap"></use>
-                        </svg>
+                        <img src="./assets/img/logo.png" class="w-100">
                     </a>
                     <p class="footer-element">© 2024 Zoo Arcadia</p>
                 </div>
@@ -161,6 +161,7 @@
                 <div class="col mb-3">
 
                 </div>
+
                 <div class="col mb-3 pb-5">
                     <h5 class="footer-element">Habitats</h5>
                     <ul class="nav flex-column">
