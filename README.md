@@ -9,4 +9,4 @@ Problème de commit : le dossier à commiter était trop lourd, le problème a p
 **Mise en place de l'environnement de travail (question de la copie de rendu ECF) :**
 Visual Studio Code sous Windows 10 : outil gratuit et performant, léger comparativement à d’autres outils et intéressant pour ses extensions.
 Xampp : gratuit, facilité d’installation pour débuter, outil "prêt à l’emploi".
-Installation de Bootstrap via Node pour faciliter la personnalisation du css (les possibilités de personnalisation avec scss ou les "popovers" n'ont finalement pas été utilisées mais elles restent disponibles pour une utilisation ultérieures).
+Installation de Bootstrap via Node pour faciliter la personnalisation du css (les possibilités de personnalisation avec scss n'ont finalement pas été utilisées mais elles restent disponibles pour une utilisation ultérieures).
