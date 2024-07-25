@@ -63,7 +63,7 @@
 
                                 <?php
 
-                            $reviews = getReviews($pdo); ?>
+                            $reviews = getApprovedReviews($pdo); ?>
 
                                 <?php
 
@@ -72,7 +72,7 @@
 
                                     <p>Auteur : <?= $review['auteur'] ?></p>
                                     <p>Avis : <?= $review['avis'] ?></p>
-                                    <input id="id" name="id" type="hidden" value="<?= $review['id'] ?>" />
+                                  
 
                                     <div class="border-bottom"></div>
                                 <?php
